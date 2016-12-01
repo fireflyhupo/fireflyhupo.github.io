@@ -1,0 +1,122 @@
+div,p,h1,h2,h3,h4,ul,li{
+	padding: 0;
+	margin: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:black;
+	border:none;
+}
+img{
+	display: block;
+	border:none;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background:#F5E79E;
+	font-family: Georgia, serif;
+	overflow-x:hidden ;
+	
+}
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 19%;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #d3d3d3;
+}
+header h3{
+	line-height: 10rem;
+}
+section{
+	width: 100%;
+	height: 70%;
+	padding-top:10%;
+}
+section ul{
+	width: 100%;
+}
+section ul:after{
+	content:".";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	
+}
+section li{
+	float:left;
+	width: 45%;
+	margin:2.5%;
+}
+section li p{
+   padding: 1rem 0 0 1rem;
+}
+section li a{
+	display: block;
+	width: 13rem;
+	height:13rem;
+	margin-left:1rem;
+	box-shadow: 0 0 0 0.2px;
+}
+section li a:hover{
+	transform: scale(1.2);
+}
+.htmlContent a{
+	background: url(../img/html.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: center ;
+}
+.cssConent a{
+	background: url(../img/css.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.jsContent a{
+	background: url(../img/js.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.reactContent a{
+	background: url(../img/react.png) no-repeat;
+	background-size: 100% 100%;
+}
+.angularContent a{
+	background: url(../img/angular.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.other{
+	background:white;
+	text-align: center;
+	line-height: 13rem;
+}
+
+@media only screen and (min-width:411px) and (max-width:731px ) {
+	section li{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:411px ) {
+	section li{
+		float: none;
+		width: 100%;
+	}
+	section li a{
+		width:9rem;
+		height:9rem;
+	}
+}
